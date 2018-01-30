@@ -18,31 +18,81 @@
     <![endif]-->
     <style media="screen">
       .height1{
-        height: 100px;
+        height:200px;
       }
       .height2{
-        height: 400px;
+        height: 100px;
+      }
+      .fitHeightWidth{
+        height: 100%;
+        width: 100%:
+      }
+      .relativeParent{
+        position: relative;
+      }
+      .absoluteChild{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .flexSpaceBetween{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flexSpaceAround{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 height1 randomColor">
+        <div class="col-md-3 height1">
+          <img src="img/square1.jpg" class="fitHeightWidth" alt="square">
+
+        </div>
+        <div class="col-md-3 height1 relativeParent">
+          <img src="img/square2.jpg" class="absoluteChild" alt="square">
+
+        </div>
+        <div class="col-md-3 height1 flex">
+          <img src="img/square2.jpg" alt="square">
+
+        </div>
+        <div class="col-md-3 height1 randomColor">
+
         </div>
       </div>
-
       <div class="row">
-        <div class="col-md-2 height2 randomColor">
+        <div class="col-md-12 height2 flexSpaceAround">
+          <img src="img/square2.jpg" alt="square">
+          <img src="img/square2.jpg" alt="square">
+          <img src="img/square2.jpg" alt="square">
+
         </div>
-        <div class="col-md-8 height2 randomColor">
-        </div>
-        <div class="col-md-2 height2 randomColor">
-        </div>
+
       </div>
-
       <div class="row">
-        <div class="cold-md-12 height1 randomColor">
+        <div class="col-md-3 height1 randomColor">
+
+        </div>
+        <div class="col-md-3 height1 randomColor">
+
+        </div>
+        <div class="col-md-3 height1 randomColor">
+
+        </div>
+        <div class="col-md-3 height1 randomColor">
+
         </div>
       </div>
 
@@ -71,76 +121,6 @@
         })
 
       })
-    </script>
-    <script type="text/javascript">
-    /*
-  //  alert("my JS!"); //name of function, then () to call the function
-    //in this case, "my JS!" is called the 'parameter
-    //in this case its text, which is always in '' or ""
-    console.log("Write to the console....");
-
-    //above are built-in functions
-
-    // we can also define our own functions
-
-    function myFirstFunction(){ //function definition
-      //whatever is in the {} will run when we call the function
-      console.log("Write from inside the function....");
-
-
-    }
-
-    myFirstFunction();
-    myFirstFunction();
-    myFirstFunction();
-    myFirstFunction();
-
-    function myFunctionwithParameter(name){
-
-      console.log("Hello"+name);
-    }
-
-    myFunctionwithParameter(" Anderson");
-    myFunctionwithParameter(", how are you?");
-
-    //a function called
-    */
-
-    //variables defined with your keyword
-
-    //Booleon values are true and false
-    var myOnOff = true;
-    var isDayTime = false;
-
-    //number variables
-    var salary = 100000;
-    var carPrice = 25000.35;
-
-    //text or string values
-    var emailAddress = "maddiereil@hotmail.com";
-    var sentence = 'The Judgement of Paris.';
-    var anotherSentence  = "Anderson's class";
-
-    var salary1 = 100000;
-    var salary2 = "10000";
-
-    var taxes = 25000;
-
-    console.log("My take home pay is" +(salary1-taxes));
-
-    console.log(" a bunch of info: "+ salary + " and " + carPrice + " and even more " + isDayTime);
-
-    var myConcatenation = " 2a bunch of info: "+ salary + " and " + carPrice + " and even more " + isDayTime;
-    console.log(myConcatenation);
-
-    function writeToConsole(myString){
-      console.log(myString);
-    }
-    writeToConsole(myConcatenation);
-    writeToConsole("3" +myConcatenation);
-
-
-
     </script>
   </body>
 </html>
