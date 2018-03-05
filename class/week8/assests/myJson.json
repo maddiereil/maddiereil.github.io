@@ -1,0 +1,46 @@
+[
+  {
+    "class":"item active",
+    "name":"Alison",
+    "gender" : "female",
+    "association" : "cousin",
+    "age" : "22",
+    "occupation" : "student"
+  },
+  {
+    "class":"item",
+    "name":"Tiffany",
+    "gender" : "female",
+    "association" : "cousin",
+    "age" : "32",
+    "occupation" : "graphic designer"
+
+  },
+  {
+    "class":"item",
+    "name":"Devon",
+    "gender" : "male",
+    "association" : "cousin",
+    "age" : "30",
+    "occupation" : "Construction worker"
+  },
+  {
+    "class":"item",
+    "name":"Liam",
+    "gender" : "male",
+    "association" : "cousin",
+    "age" : "20",
+    "occupation" : "student"
+
+  },
+  {
+    "class":"item",
+    "name":"Lee",
+    "gender" : "male",
+    "association" : "uncle",
+    "age" : "50",
+    "occupation" : "HVAC Technician"
+
+  }
+
+]
