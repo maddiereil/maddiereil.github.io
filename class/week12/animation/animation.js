@@ -138,13 +138,13 @@ canvas.width = screen.availWidth;
 canvas.height = screen.availHeight;
 //a bunch of sprite data
 var spriteImages = [{
-    "spriteMapUrl": "images/coin-sprite-animation.png",
-    "numFrames": 10,
-    "width": 1000,
+    "spriteMapUrl": "images/taz2.png",
+    "numFrames": 4,
+    "width": 600,
     "height": 100,
-    "name": "coin"
+    "name": "taz"
   },
-  {
+/* {
     "spriteMapUrl": "images/Madoka.png",
     "numFrames": 8,
     "width": 809,
@@ -157,7 +157,7 @@ var spriteImages = [{
     "width": 4800,
     "height": 200,
     "name": "cat"
-  }
+  } */
 ];
 var animations = []; //an array to hold the currently existing sprite obects
 var maxAnimations = spriteImages.length; //how many animations we want on the screen at any one time
